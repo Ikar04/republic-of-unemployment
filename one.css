@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'cairo';
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f111a;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: #1a1d2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+header .logo h3{
+    color: #5865F2;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+header .nav nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+header .nav nav ul li a{
+    text-decoration: none;
+    color: #f8f9fa;
+    transition: .5s;
+}
+header .nav nav ul li a:hover{
+    text-decoration: underline;
+    color: #00fa9a;
+    font-size: 20px;
+    font-weight: 700;
+}
+header .join a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+header .join a button{
+    width: 120px;
+    height: 45px;
+    background-color: #5865F2;
+    border: none;
+    border-radius: 10px;
+    color: #f8f9fa;
+}
+header .join a button:hover{
+    background-color: #f8f9fa;
+    color: #0f111a;
+    cursor: pointer;
+    transition: .8s;
+}
+main{
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+    text-align: center;
+}
+main .main h4{
+    color: gray;
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+main .main h1{
+    color: #5865F2;
+    font-size: 40px;
+    padding-bottom: 7px;
+}
+main .main h3{
+    color: #f8f9fa;
+    font-size: 23px;
+}
+main .main p{
+    color: cornflowerblue;
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+main .joins a{
+    text-decoration: none;
+}
+main .joins a button{
+    width: 130px;
+    height: 55px;
+    background-color: #5865F2;
+    border: none;
+    border-radius: 10px;
+    color: #f8f9fa;
+    margin: 10px;
+    font-size: 17px;
+}
+main .joins a button:hover{
+    background-color: #555555;
+    color: gold;
+    transition: .7s;
+    scale: 1.1;
+    cursor: pointer;
+}
+hr{
+    border: 2px solid #5865F2;
+}
+.games .logo h1{
+    color: #5865F2;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    margin: 10px;
+}
+.games .game {
+    width: 700px;
+    height: 150px; 
+    border: 1.2px solid #5865F2; 
+    background-color: #1a1d2e; 
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;              
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.games .game:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(88, 101, 242, 0.2); 
+    cursor: pointer;
+}
+.games .game .img {
+    width: 200px;
+    height: 100%;
+}
+.games .game .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.games .game .shr7 {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.games .game .shr7 h2 {
+    color: #f8f9fa;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.games .game .shr7 p {
+    color: #a0aec0; 
+    font-size: 14px;
+    line-height: 1.5;
+}
+.joinsss{
+    text-align: center;
+}
+.joinsss h1{
+    color: #5865F2;
+    padding: 10px;
+}
+.joinsss h2{
+    color: #f8f9fa;
+    padding-bottom: 10px;
+}
+.joinsss .jin a{
+    text-decoration: none;
+}
+.joinsss .jin a button{
+    width: 130px;
+    height: 55px;
+    background-color: #5865F2;
+    border: none;
+    border-radius: 10px;
+    color: #f8f9fa;
+    margin: 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.joinsss .jin a button:hover{
+    background-color: #3f3f3f;
+    color: #5865F2;
+    transition: .9s;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+}
+footer p{
+    font-size: 17px;
+    color: gray;
+}
+@media (max-width: 768px) {  
+    header {
+        position: relative; 
+        height: auto;
+        flex-direction: column; 
+        gap: 15px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+    header .logo h3 {
+        font-size: 24px;
+        padding-right: 0;
+    }
+    header .nav nav ul {
+        gap: 15px;
+        justify-content: center;
+    }
+    header .join a {
+        padding-left: 0;
+    }   
+    main {
+        padding-top: 40px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    main .main h1 {
+        font-size: 32px;
+    }
+    main .main h3 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    main .joins {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }   
+    main .joins a {
+        width: 80%; 
+        display: inline-block; 
+    }    
+    main .joins a button {
+        width: 100%; 
+        margin: 5px 0;
+    }
+    
+    .games .game {
+        width: 90%; 
+        height: auto; 
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    
+    .games .game .img {
+        width: 100%;
+        height: 200px;
+    }
+
+    
+    .games .game .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+
+    
+    .games .game .shr7 {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .games .game .shr7 h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .games .game .shr7 p {
+        font-size: 14px;
+    }   
+    .joinsss h1 {
+        font-size: 24px;
+    }
+    .joinsss h2 {
+        font-size: 18px;
+    }
+    .joinsss .jin a {
+        width: 80%;
+        display: inline-block;
+    }
+    .joinsss .jin a button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
